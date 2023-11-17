@@ -13,4 +13,6 @@ extension UIColor {
 //    static let buttonBackgroundColor = UIColor(red: 138/255, green: 138/255, blue: 142/255, alpha: 1)
     static let buttonBackgroundColor = UIColor(named: "buttonBackgroundColor")
     static let labelColor = UIColor(named: "labelColor")
+    static let viewBackgroudColor = UIColor(named: "viewBackgroundColor") ?? .white
+    static let textFieldColor = UIColor(named: "textFieldColor")
 }

@@ -12,74 +12,34 @@ class LoginView: UIView {
     
     override init(frame: CGRect){
         super.init(frame: .zero)
-        self.backgroundColor = .white
+        self.backgroundColor = UIColor(named: "viewBackgroundColor")
         
         setupVisualElements()
     }
+    
     required init?(coder: NSCoder){
         fatalError("inint(coder:) has not been implemented")
     }
     
+    //cria a função com as propriedades da imagem no login
+    var loginImage = ImageDefault(image: "ImageLogin")
+    
+    //cria a função com as propriedades da label no login
+    var imageLabel = LabelDefault(text: "Registre e gerencie as ocorrências do seu IF")
+    
+    //cria a função com as propriedades da campo de texto de login no login
+    var  emailTextField = TextFieldDefault(text: "E-mail")
+    
+    //cria a função com as propriedades da campo de texto de senha no login
+    var  senhaTextField = TextFieldDefault(text: "Senha")
+    
+    //cria a função com as propriedades do botão de logar no login
+    var  logarButton = ButtonDefault(title: "LOGAR")
+    
+    //cria a função com as propriedades do botão de regitrar no login
+    var  registrarButton = ButtonDefault(title: "REGISTRAR")
+    
     func setupVisualElements() {
-        let loginImage: UIImageView = {
-            let image = UIImageView()
-            image.image = UIImage(named: "ImageLogin")
-            image.contentMode = .scaleAspectFit // aumenta o x e y da imagem juntos
-            image.translatesAutoresizingMaskIntoConstraints = false
-            
-            return image
-        }()
-        
-        let imageLabel: UILabel = {
-            let label = UILabel()
-            label.text = "Registre e gerencie as ocorrências do seu IF"
-            label.textColor = .labelColor
-            label.textAlignment = .center
-            label.font  = UIFont(name: "SFProDisplay-Light", size: 17)
-            label.translatesAutoresizingMaskIntoConstraints = false
-            
-            return label
-        }()
-        
-        let emailTextField: UITextField = {
-            let textField = UITextField()
-            textField.backgroundColor = .white
-            textField.placeholder = "E-mail"
-            textField.layer.cornerRadius = 12
-            textField.translatesAutoresizingMaskIntoConstraints = false
-            
-            return textField
-        }()
-        
-        let senhaTextField: UITextField = {
-            let senhaTextField = UITextField()
-            senhaTextField.backgroundColor = .white
-            senhaTextField.placeholder = "Senha"
-            senhaTextField.layer.cornerRadius = 12
-            senhaTextField.translatesAutoresizingMaskIntoConstraints = false
-            
-            return senhaTextField
-        }()
-        
-        let logarButton: UIButton = {
-            let button = UIButton()
-            button.backgroundColor = .buttonBackgroundColor
-            button.setTitle("LOGAR", for: .normal)
-            button.layer.cornerRadius = 12
-            button.translatesAutoresizingMaskIntoConstraints = false
-            
-            return button
-        }()
-        
-        let registrarButton: UIButton = {
-            let button = UIButton()
-            button.backgroundColor = .buttonBackgroundColor
-            button.setTitle("REGISTRAR", for: .normal)
-            button.layer.cornerRadius = 12
-            button.translatesAutoresizingMaskIntoConstraints = false
-        
-            return button
-        }()
         
         self.addSubview(loginImage)
         self.addSubview(imageLabel)
