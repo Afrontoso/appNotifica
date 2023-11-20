@@ -9,14 +9,20 @@ import Foundation
 import UIKit
 
 class LoginViewController: UIViewController {
-    let loginView = LoginView()
+    var onRegisterTap: (() -> Void)?
+
+    lazy var loginView: LoginView = {
+        let view = LoginView()
+//        view.onRegistarTap = self.onRegistarTap
+        view.onRegisterTap = {
+            self.onRegisterTap?()
+        }
+        return view
+    }()
     
     override func loadView() {
-//        super.loadView()
-//        view.backgroundColor = .yellow
         self.view = loginView
     }
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()

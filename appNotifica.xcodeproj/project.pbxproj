@@ -16,6 +16,9 @@
 		4040A45B2B07AA7F00A5EEDD /* LabelDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4040A45A2B07AA7F00A5EEDD /* LabelDefault.swift */; };
 		4040A45D2B07AF8800A5EEDD /* TextFieldDefaut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4040A45C2B07AF8800A5EEDD /* TextFieldDefaut.swift */; };
 		4040A45F2B07B2E800A5EEDD /* ButtonDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4040A45E2B07B2E800A5EEDD /* ButtonDefault.swift */; };
+		4040A4622B0B830D00A5EEDD /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4040A4612B0B830D00A5EEDD /* RegisterView.swift */; };
+		4040A4642B0B832400A5EEDD /* RegisterViewControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4040A4632B0B832400A5EEDD /* RegisterViewControler.swift */; };
+		4040A4662B0B889900A5EEDD /* RegisterCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4040A4652B0B889900A5EEDD /* RegisterCoordinator.swift */; };
 		409DEA212AFBC1D200B87D27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409DEA202AFBC1D200B87D27 /* AppDelegate.swift */; };
 		409DEA232AFBC1D200B87D27 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409DEA222AFBC1D200B87D27 /* SceneDelegate.swift */; };
 		409DEA252AFBC1D200B87D27 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409DEA242AFBC1D200B87D27 /* ViewController.swift */; };
@@ -34,6 +37,9 @@
 		4040A45A2B07AA7F00A5EEDD /* LabelDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelDefault.swift; sourceTree = "<group>"; };
 		4040A45C2B07AF8800A5EEDD /* TextFieldDefaut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldDefaut.swift; sourceTree = "<group>"; };
 		4040A45E2B07B2E800A5EEDD /* ButtonDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonDefault.swift; sourceTree = "<group>"; };
+		4040A4612B0B830D00A5EEDD /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		4040A4632B0B832400A5EEDD /* RegisterViewControler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewControler.swift; sourceTree = "<group>"; };
+		4040A4652B0B889900A5EEDD /* RegisterCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCoordinator.swift; sourceTree = "<group>"; };
 		409DEA1D2AFBC1D200B87D27 /* appNotifica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appNotifica.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		409DEA202AFBC1D200B87D27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		409DEA222AFBC1D200B87D27 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +88,7 @@
 		4040A4492B02512700A5EEDD /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				4040A4602B0B82EA00A5EEDD /* Register */,
 				4040A4512B02546800A5EEDD /* Login */,
 			);
 			path = Controller;
@@ -92,6 +99,7 @@
 			children = (
 				4040A44B2B02516D00A5EEDD /* Coordinator.swift */,
 				4040A44D2B0251A600A5EEDD /* LoginCoordinator.swift */,
+				4040A4652B0B889900A5EEDD /* RegisterCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -122,6 +130,15 @@
 				4040A45E2B07B2E800A5EEDD /* ButtonDefault.swift */,
 			);
 			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		4040A4602B0B82EA00A5EEDD /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				4040A4612B0B830D00A5EEDD /* RegisterView.swift */,
+				4040A4632B0B832400A5EEDD /* RegisterViewControler.swift */,
+			);
+			path = Register;
 			sourceTree = "<group>";
 		};
 		409DEA142AFBC1D200B87D27 = {
@@ -223,16 +240,19 @@
 			files = (
 				4040A4502B02520F00A5EEDD /* LoginViewController.swift in Sources */,
 				4040A4532B02548600A5EEDD /* LoginView.swift in Sources */,
+				4040A4622B0B830D00A5EEDD /* RegisterView.swift in Sources */,
 				4040A44C2B02516D00A5EEDD /* Coordinator.swift in Sources */,
 				4040A45D2B07AF8800A5EEDD /* TextFieldDefaut.swift in Sources */,
 				409DEA252AFBC1D200B87D27 /* ViewController.swift in Sources */,
 				4040A45B2B07AA7F00A5EEDD /* LabelDefault.swift in Sources */,
 				4040A44E2B0251A600A5EEDD /* LoginCoordinator.swift in Sources */,
+				4040A4642B0B832400A5EEDD /* RegisterViewControler.swift in Sources */,
 				4040A45F2B07B2E800A5EEDD /* ButtonDefault.swift in Sources */,
 				4040A4592B07A59E00A5EEDD /* ImageDefault.swift in Sources */,
 				409DEA212AFBC1D200B87D27 /* AppDelegate.swift in Sources */,
 				4040A4562B0268AD00A5EEDD /* Color+.swift in Sources */,
 				409DEA232AFBC1D200B87D27 /* SceneDelegate.swift in Sources */,
+				4040A4662B0B889900A5EEDD /* RegisterCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

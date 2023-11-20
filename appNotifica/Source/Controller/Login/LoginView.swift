@@ -10,8 +10,10 @@ import UIKit
 
 class LoginView: UIView {
     
+    var onRegisterTap: (() -> Void)?
+    
     override init(frame: CGRect){
-        super.init(frame: .zero)
+        super.init(frame: frame)
         self.backgroundColor = UIColor(named: "viewBackgroundColor")
         
         setupVisualElements()
@@ -48,6 +50,8 @@ class LoginView: UIView {
         self.addSubview(logarButton)
         self.addSubview(registrarButton)
         
+        registrarButton.addTarget(self, action: #selector(registerTap), for: .touchUpInside)
+        
         NSLayoutConstraint.activate([
             loginImage.topAnchor.constraint(equalTo: self.topAnchor, constant: 228),
             loginImage.centerXAnchor.constraint(equalTo: self.centerXAnchor),
@@ -78,5 +82,8 @@ class LoginView: UIView {
             registrarButton.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -10),
             registrarButton.heightAnchor.constraint(equalToConstant: 60)
         ])
+    }
+    @objc private func registerTap(){
+        onRegisterTap?()
     }
 }

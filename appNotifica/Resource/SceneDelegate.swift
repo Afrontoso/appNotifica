@@ -27,8 +27,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let viewController = ViewController()
         navigationController.pushViewController(viewController, animated: true)
         
+//        let coordinator = LoginCoordinator(navigationController: navigationController)
+//        coordinator.start()
         let coordinator = LoginCoordinator(navigationController: navigationController)
-        coordinator.start()
+                coordinator.start()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
