@@ -10,7 +10,9 @@ import UIKit
 
 class LoginView: UIView {
     
+    //MARK: - Clouseres
     var onRegisterTap: (() -> Void)?
+    var onLoginTap: (() -> Void)?
     
     override init(frame: CGRect){
         super.init(frame: frame)
@@ -51,6 +53,7 @@ class LoginView: UIView {
         self.addSubview(registrarButton)
         
         registrarButton.addTarget(self, action: #selector(registerTap), for: .touchUpInside)
+        logarButton.addTarget(self, action: #selector(loginTap), for: .touchUpInside)
         
         NSLayoutConstraint.activate([
             loginImage.topAnchor.constraint(equalTo: self.topAnchor, constant: 228),
@@ -83,7 +86,13 @@ class LoginView: UIView {
             registrarButton.heightAnchor.constraint(equalToConstant: 60)
         ])
     }
+    
+    //MARK: - Action
     @objc private func registerTap(){
         onRegisterTap?()
+    }
+    
+    @objc private func loginTap() {
+        onLoginTap?()
     }
 }

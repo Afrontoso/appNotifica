@@ -10,8 +10,11 @@ import UIKit
 
 class RegisterView: UIView {
     
+    //MARK: - Clouseres
     var onLoginTap: (() -> Void)?
     
+    //MARK: - Initialize
+
     override init(frame: CGRect){
         super.init(frame: .zero)
         self.backgroundColor = UIColor(named: "viewBackgroundColor")
@@ -29,7 +32,7 @@ class RegisterView: UIView {
     var  senhaTextField = TextFieldDefault(text: "Senha")
     var  cSenhaTextField = TextFieldDefault(text: "Confirmar Senha")
     var  registrarButton = ButtonDefault(title: "REGISTRAR")
-    var  logarButton = ButtonDefault(title: "LOGAR")
+    var  logarButton = ButtonDefault(title: "LOGIN")
     
     
     func setupVisualElements() {
@@ -79,6 +82,8 @@ class RegisterView: UIView {
             logarButton.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -16)
         ])
     }
+    
+    //MARK: - Action
     @objc private func loginTap(){
         onLoginTap?()
     }

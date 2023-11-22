@@ -8,17 +8,17 @@
 import Foundation
 import UIKit
 
-class RegisterViewController: UIViewController {
+class RegisterViewController: ViewControllerDefaut {
     
+    //MARK: - Clouseres
     var onLoginTap: (() -> Void)?
-//    let registerView = RegisterView()
     
     lazy var registerView: RegisterView = {
         let registerView = RegisterView()
-//        registerView.onLoginTap = {
-//            self.onLoginTap?()
-//        }
-        registerView.onLoginTap = self.onLoginTap
+        registerView.onLoginTap = {
+            self.onLoginTap?()
+        }
+//        registerView.onLoginTap = self.onLoginTap
         return registerView
     }()
     
@@ -30,6 +30,6 @@ class RegisterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Registrar"
-        self.navigationController?.navigationBar.prefersLargeTitles = true
+        //self.navigationController?.navigationBar.prefersLargeTitles = true
     }
 }
