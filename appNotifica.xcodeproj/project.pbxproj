@@ -23,6 +23,9 @@
 		4040A46D2B0E23D700A5EEDD /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4040A46C2B0E23D700A5EEDD /* HomeView.swift */; };
 		4040A46F2B0E23E600A5EEDD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4040A46E2B0E23E600A5EEDD /* HomeViewController.swift */; };
 		4040A4712B0E240B00A5EEDD /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4040A4702B0E240B00A5EEDD /* HomeCoordinator.swift */; };
+		4040A4732B10D85300A5EEDD /* ViewDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4040A4722B10D85200A5EEDD /* ViewDefault.swift */; };
+		4040A4762B10E43600A5EEDD /* SobreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4040A4752B10E43600A5EEDD /* SobreViewController.swift */; };
+		4040A4782B10E4DC00A5EEDD /* SobreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4040A4772B10E4DC00A5EEDD /* SobreView.swift */; };
 		409DEA212AFBC1D200B87D27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409DEA202AFBC1D200B87D27 /* AppDelegate.swift */; };
 		409DEA232AFBC1D200B87D27 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409DEA222AFBC1D200B87D27 /* SceneDelegate.swift */; };
 		409DEA252AFBC1D200B87D27 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409DEA242AFBC1D200B87D27 /* ViewController.swift */; };
@@ -48,6 +51,9 @@
 		4040A46C2B0E23D700A5EEDD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		4040A46E2B0E23E600A5EEDD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4040A4702B0E240B00A5EEDD /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		4040A4722B10D85200A5EEDD /* ViewDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDefault.swift; sourceTree = "<group>"; };
+		4040A4752B10E43600A5EEDD /* SobreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SobreViewController.swift; sourceTree = "<group>"; };
+		4040A4772B10E4DC00A5EEDD /* SobreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SobreView.swift; sourceTree = "<group>"; };
 		409DEA1D2AFBC1D200B87D27 /* appNotifica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appNotifica.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		409DEA202AFBC1D200B87D27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		409DEA222AFBC1D200B87D27 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +102,7 @@
 		4040A4492B02512700A5EEDD /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				4040A4742B10E41800A5EEDD /* Sobre */,
 				4040A4692B0E23A500A5EEDD /* Home */,
 				4040A4602B0B82EA00A5EEDD /* Register */,
 				4040A4512B02546800A5EEDD /* Login */,
@@ -139,6 +146,7 @@
 				4040A45C2B07AF8800A5EEDD /* TextFieldDefaut.swift */,
 				4040A45E2B07B2E800A5EEDD /* ButtonDefault.swift */,
 				4040A4672B0E235100A5EEDD /* ViewControllerDefaut.swift */,
+				4040A4722B10D85200A5EEDD /* ViewDefault.swift */,
 			);
 			path = Infrastructure;
 			sourceTree = "<group>";
@@ -159,6 +167,15 @@
 				4040A46E2B0E23E600A5EEDD /* HomeViewController.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		4040A4742B10E41800A5EEDD /* Sobre */ = {
+			isa = PBXGroup;
+			children = (
+				4040A4752B10E43600A5EEDD /* SobreViewController.swift */,
+				4040A4772B10E4DC00A5EEDD /* SobreView.swift */,
+			);
+			path = Sobre;
 			sourceTree = "<group>";
 		};
 		409DEA142AFBC1D200B87D27 = {
@@ -261,8 +278,10 @@
 				4040A4502B02520F00A5EEDD /* LoginViewController.swift in Sources */,
 				4040A4532B02548600A5EEDD /* LoginView.swift in Sources */,
 				4040A4622B0B830D00A5EEDD /* RegisterView.swift in Sources */,
+				4040A4762B10E43600A5EEDD /* SobreViewController.swift in Sources */,
 				4040A44C2B02516D00A5EEDD /* Coordinator.swift in Sources */,
 				4040A45D2B07AF8800A5EEDD /* TextFieldDefaut.swift in Sources */,
+				4040A4782B10E4DC00A5EEDD /* SobreView.swift in Sources */,
 				4040A46F2B0E23E600A5EEDD /* HomeViewController.swift in Sources */,
 				4040A46D2B0E23D700A5EEDD /* HomeView.swift in Sources */,
 				409DEA252AFBC1D200B87D27 /* ViewController.swift in Sources */,
@@ -274,6 +293,7 @@
 				409DEA212AFBC1D200B87D27 /* AppDelegate.swift in Sources */,
 				4040A4562B0268AD00A5EEDD /* Color+.swift in Sources */,
 				4040A4682B0E235200A5EEDD /* ViewControllerDefaut.swift in Sources */,
+				4040A4732B10D85300A5EEDD /* ViewDefault.swift in Sources */,
 				409DEA232AFBC1D200B87D27 /* SceneDelegate.swift in Sources */,
 				4040A4662B0B889900A5EEDD /* RegisterCoordinator.swift in Sources */,
 				4040A4712B0E240B00A5EEDD /* HomeCoordinator.swift in Sources */,

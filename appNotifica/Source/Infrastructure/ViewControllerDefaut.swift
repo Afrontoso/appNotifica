@@ -15,6 +15,16 @@ class ViewControllerDefaut: ViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //title se modifica, deixando ele grande e mais visivel
         self.navigationController?.navigationBar.prefersLargeTitles = true
+        
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.hiderKeyboardByTappingoutSide))
+            self.view.addGestureRecognizer(tap)
     }
+    
+    @objc
+    func hiderKeyboardByTappingoutSide(){
+        self.view.endEditing(true)
+    }
+    
 }

@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 class RegisterCoordinator: Coordinator {
-    let navigationController: UINavigationController
+    var navigationController: UINavigationController
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
     }

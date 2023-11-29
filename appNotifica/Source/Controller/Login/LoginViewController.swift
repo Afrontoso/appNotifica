@@ -16,6 +16,7 @@ class LoginViewController: ViewControllerDefaut {
 
     lazy var loginView: LoginView = {
         let view = LoginView()
+//        outra forma de escreve
 //        view.onRegistarTap = self.onRegistarTap
         view.onRegisterTap = {
             self.onRegisterTap?()
@@ -34,6 +35,7 @@ class LoginViewController: ViewControllerDefaut {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Login"
-        //self.navigationController?.navigationBar.prefersLargeTitles = true
+        // oculta o botão de voltar
+        self.navigationItem.setHidesBackButton(true, animated: false)
     }
 }

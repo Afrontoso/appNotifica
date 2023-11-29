@@ -14,8 +14,8 @@
             filePath = "appNotifica/Source/Controller/Register/RegisterView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "88"
-            endingLineNumber = "88"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
             landmarkName = "loginTap()"
             landmarkType = "7">
          </BreakpointContent>
@@ -34,54 +34,6 @@
             endingLineNumber = "19"
             landmarkName = "registerView"
             landmarkType = "24">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "52945DF7-EF45-4615-A978-B94AD68C0DF5"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "appNotifica/Source/Coordinator/RegisterCoordinator.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
-            landmarkName = "start()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "52945DF7-EF45-4615-A978-B94AD68C0DF5 - 69d43acad52e34d7"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; () in appNotifica.RegisterCoordinator.start() -&gt; ()"
-                  moduleName = "appNotifica"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ifb-biotic-12/Documents/Xcode/appNotifica/appNotifica/Source/Coordinator/RegisterCoordinator.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "21"
-                  endingLineNumber = "21"
-                  offsetFromSymbolStart = "22">
-               </Location>
-               <Location
-                  uuid = "52945DF7-EF45-4615-A978-B94AD68C0DF5 - d7ba5286b9f1c419"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "appNotifica.RegisterCoordinator.start() -&gt; ()"
-                  moduleName = "appNotifica"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ifb-biotic-12/Documents/Xcode/appNotifica/appNotifica/Source/Coordinator/RegisterCoordinator.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "23"
-                  endingLineNumber = "23"
-                  offsetFromSymbolStart = "77">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
