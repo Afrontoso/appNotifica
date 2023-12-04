@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class NovoOcorrenciaViewController: ViewControllerDefaut {
+class NovaOcorrenciaViewController: ViewControllerDefaut {
     
     //MARK: - Clouseres
     var onNomeTap: (() -> Void)?

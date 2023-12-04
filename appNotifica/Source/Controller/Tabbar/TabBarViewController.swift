@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class TabbarController: UITabBarController {
+class TabBarViewController: UITabBarController {
     override func setViewControllers(_ viewControllers: [UIViewController]?, animated: Bool) {
         super.setViewControllers(viewControllers, animated: true)
         
