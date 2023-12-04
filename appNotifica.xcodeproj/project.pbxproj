@@ -26,12 +26,16 @@
 		4040A4732B10D85300A5EEDD /* ViewDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4040A4722B10D85200A5EEDD /* ViewDefault.swift */; };
 		4040A4762B10E43600A5EEDD /* SobreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4040A4752B10E43600A5EEDD /* SobreViewController.swift */; };
 		4040A4782B10E4DC00A5EEDD /* SobreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4040A4772B10E4DC00A5EEDD /* SobreView.swift */; };
+		408F8C1E2B17817A00CE38BA /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408F8C1D2B17817A00CE38BA /* TabbarController.swift */; };
 		409DEA212AFBC1D200B87D27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409DEA202AFBC1D200B87D27 /* AppDelegate.swift */; };
 		409DEA232AFBC1D200B87D27 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409DEA222AFBC1D200B87D27 /* SceneDelegate.swift */; };
 		409DEA252AFBC1D200B87D27 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409DEA242AFBC1D200B87D27 /* ViewController.swift */; };
 		409DEA282AFBC1D200B87D27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 409DEA262AFBC1D200B87D27 /* Main.storyboard */; };
 		409DEA2A2AFBC1D400B87D27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 409DEA292AFBC1D400B87D27 /* Assets.xcassets */; };
 		409DEA2D2AFBC1D400B87D27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 409DEA2B2AFBC1D400B87D27 /* LaunchScreen.storyboard */; };
+		40B47A952B1DFAE5007DD273 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B47A942B1DFAE5007DD273 /* TabBarView.swift */; };
+		40B47A972B1DFDF7007DD273 /* NovaOcorrenciaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B47A962B1DFDF7007DD273 /* NovaOcorrenciaView.swift */; };
+		40B47A992B1DFE07007DD273 /* NovaOcorrenciaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B47A982B1DFE07007DD273 /* NovaOcorrenciaViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +58,7 @@
 		4040A4722B10D85200A5EEDD /* ViewDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDefault.swift; sourceTree = "<group>"; };
 		4040A4752B10E43600A5EEDD /* SobreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SobreViewController.swift; sourceTree = "<group>"; };
 		4040A4772B10E4DC00A5EEDD /* SobreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SobreView.swift; sourceTree = "<group>"; };
+		408F8C1D2B17817A00CE38BA /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
 		409DEA1D2AFBC1D200B87D27 /* appNotifica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appNotifica.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		409DEA202AFBC1D200B87D27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		409DEA222AFBC1D200B87D27 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +67,9 @@
 		409DEA292AFBC1D400B87D27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		409DEA2C2AFBC1D400B87D27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		409DEA2E2AFBC1D400B87D27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40B47A942B1DFAE5007DD273 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		40B47A962B1DFDF7007DD273 /* NovaOcorrenciaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovaOcorrenciaView.swift; sourceTree = "<group>"; };
+		40B47A982B1DFE07007DD273 /* NovaOcorrenciaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovaOcorrenciaViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +110,8 @@
 		4040A4492B02512700A5EEDD /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				408F8C1C2B1780F000CE38BA /* NovaOcorrencia */,
+				408F8C1A2B1780C800CE38BA /* Tabbar */,
 				4040A4742B10E41800A5EEDD /* Sobre */,
 				4040A4692B0E23A500A5EEDD /* Home */,
 				4040A4602B0B82EA00A5EEDD /* Register */,
@@ -176,6 +186,24 @@
 				4040A4772B10E4DC00A5EEDD /* SobreView.swift */,
 			);
 			path = Sobre;
+			sourceTree = "<group>";
+		};
+		408F8C1A2B1780C800CE38BA /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				408F8C1D2B17817A00CE38BA /* TabbarController.swift */,
+				40B47A942B1DFAE5007DD273 /* TabBarView.swift */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		408F8C1C2B1780F000CE38BA /* NovaOcorrencia */ = {
+			isa = PBXGroup;
+			children = (
+				40B47A962B1DFDF7007DD273 /* NovaOcorrenciaView.swift */,
+				40B47A982B1DFE07007DD273 /* NovaOcorrenciaViewController.swift */,
+			);
+			path = NovaOcorrencia;
 			sourceTree = "<group>";
 		};
 		409DEA142AFBC1D200B87D27 = {
@@ -276,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4040A4502B02520F00A5EEDD /* LoginViewController.swift in Sources */,
+				408F8C1E2B17817A00CE38BA /* TabbarController.swift in Sources */,
 				4040A4532B02548600A5EEDD /* LoginView.swift in Sources */,
 				4040A4622B0B830D00A5EEDD /* RegisterView.swift in Sources */,
 				4040A4762B10E43600A5EEDD /* SobreViewController.swift in Sources */,
@@ -283,10 +312,13 @@
 				4040A45D2B07AF8800A5EEDD /* TextFieldDefaut.swift in Sources */,
 				4040A4782B10E4DC00A5EEDD /* SobreView.swift in Sources */,
 				4040A46F2B0E23E600A5EEDD /* HomeViewController.swift in Sources */,
+				40B47A992B1DFE07007DD273 /* NovaOcorrenciaViewController.swift in Sources */,
 				4040A46D2B0E23D700A5EEDD /* HomeView.swift in Sources */,
+				40B47A952B1DFAE5007DD273 /* TabBarView.swift in Sources */,
 				409DEA252AFBC1D200B87D27 /* ViewController.swift in Sources */,
 				4040A45B2B07AA7F00A5EEDD /* LabelDefault.swift in Sources */,
 				4040A44E2B0251A600A5EEDD /* LoginCoordinator.swift in Sources */,
+				40B47A972B1DFDF7007DD273 /* NovaOcorrenciaView.swift in Sources */,
 				4040A4642B0B832400A5EEDD /* RegisterViewController.swift in Sources */,
 				4040A45F2B07B2E800A5EEDD /* ButtonDefault.swift in Sources */,
 				4040A4592B07A59E00A5EEDD /* ImageDefault.swift in Sources */,

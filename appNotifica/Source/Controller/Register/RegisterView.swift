@@ -26,14 +26,12 @@ class RegisterView: ViewDefault {
         let text = TextFieldDefault(text: "Senha", keyBordType: .emailAddress, returnKeyType: .next)
         text.isSecureTextEntry = true;
         return text
-        
     }()
     
     var  cSenhaTextField : TextFieldDefault = {
-        let text = TextFieldDefault(text: "Confirmar Senha", keyBordType: .emailAddress, returnKeyType: .next)
+        let text = TextFieldDefault(text: "Confirmar Senha", keyBordType: .emailAddress, returnKeyType: .done)
         text.isSecureTextEntry = true;
         return text
-        
     }()
     
     var  registrarButton = ButtonDefault(title: "REGISTRAR")

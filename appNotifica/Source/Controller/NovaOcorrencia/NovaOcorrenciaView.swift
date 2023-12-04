@@ -1,13 +1,14 @@
-//  SobreView.swift
+//
+//  NovaOcorrenciaView.swift
 //  appNotifica
 //
-//  Created by IFB-BIOTIC-12 on 24/11/23.
+//  Created by IFB-BIOTIC-12 on 04/12/23.
 //
 
 import Foundation
 import UIKit
 
-class SobreView: ViewDefault {
+class NovaOcorrenciaView: UIView {
     
     //MARK: - Closures
     
@@ -24,9 +25,7 @@ class SobreView: ViewDefault {
     required init? (coder: NSCoder) {
         fatalError("Init(coder: ) has not been implemented")
     }
-    override func setupVisualElements(){
+    func setupVisualElements(){
         
     }
 }
-
-

@@ -25,7 +25,7 @@ class HomeViewController: ViewControllerDefaut {
     // é executado quando está carregando
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Home"
+        self.title = "Ocorrências"
         //muda a o "Home" de lugar, agora esta na ViewControllerDefaut
         //self.navigationController?.navigationBar.prefersLargeTitles = true
     }
