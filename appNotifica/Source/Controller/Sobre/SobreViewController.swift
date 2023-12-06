@@ -11,22 +11,22 @@ import UIKit
 class SobreViewController: ViewControllerDefaut {
     
     //MARK: - Clouseres
-//    var onNomeTap: (() -> Void)?
-//    
-//    lazy var sobreView: SobreView = {
-//        let sobreView = SobreView()
-//        
-//        
-//        return sobreView
-//    }()
-//    
-//    override func loadView() {
-//        self.view = sobreView
-//    }
-//    
-//    
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//        self.title = "Sobre"
-//    }
+    var onNomeTap: (() -> Void)?
+    
+    lazy var sobreView: SobreView = {
+        let sobreView = SobreView()
+        
+        
+        return sobreView
+    }()
+    
+    override func loadView() {
+        self.view = sobreView
+    }
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.title = "Sobre"
+    }
 }

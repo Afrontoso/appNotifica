@@ -16,13 +16,13 @@ class NovaOcorrenciaView: ViewDefault {
     //MARK: - Proports
     lazy var imagem: UIImageView = {
         let view = UIImageView()
-        view.image = UIImage(named: "imagemCamera")
+        view.image = UIImage(named: "imageCamera")
         
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
     
-    lazy var tituloTextField = TextFieldDefault(text: "Titulo ", keyBordType: .default, returnKeyType: .next)
+    lazy var tituloTextField = TextFieldDefault(text: "Título ", keyBordType: .default, returnKeyType: .next)
     lazy var descricaoTextField = TextFieldDefault(text: "Descrição ", keyBordType: .default, returnKeyType: .next)
     lazy var localizaTextField = TextFieldDefault(text: "Localizacão ", keyBordType: .default, returnKeyType: .next)
     lazy var statusTextField = TextFieldDefault(text: "Status ", keyBordType: .default, returnKeyType: .done)
@@ -36,7 +36,6 @@ class NovaOcorrenciaView: ViewDefault {
         self.addSubview(statusTextField)
         self.addSubview(saveButton)
 
-
         NSLayoutConstraint.activate([
             imagem.heightAnchor.constraint(equalToConstant: 200),
             imagem.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 20),
@@ -48,7 +47,6 @@ class NovaOcorrenciaView: ViewDefault {
             tituloTextField.topAnchor.constraint(equalTo:imagem.bottomAnchor, constant: 20),
             tituloTextField.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 15),
             tituloTextField.trailingAnchor.constraint(equalTo:self.trailingAnchor,constant:  -15),
-
 
             descricaoTextField.widthAnchor.constraint(equalToConstant: 374),
             descricaoTextField.heightAnchor.constraint(equalToConstant: 60),
@@ -67,7 +65,6 @@ class NovaOcorrenciaView: ViewDefault {
             statusTextField.topAnchor.constraint(equalTo: localizaTextField.bottomAnchor, constant: 5),
             statusTextField.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 15),
             statusTextField.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -15),
-
 
             saveButton.widthAnchor.constraint(equalToConstant: 374),
             saveButton.heightAnchor.constraint(equalToConstant: 60),

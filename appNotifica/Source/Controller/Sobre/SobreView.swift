@@ -15,17 +15,8 @@ class SobreView: ViewDefault {
     
     //MARK: - Inits
     
-    override init(frame: CGRect){
-        super.init(frame: frame)
-        setupVisualElements()
-        self.backgroundColor = .viewBackgroudColor
-    }
-    
-    required init? (coder: NSCoder) {
-        fatalError("Init(coder: ) has not been implemented")
-    }
     override func setupVisualElements(){
-        
+        super.setupVisualElements()
     }
 }
 
