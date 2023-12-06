@@ -39,6 +39,7 @@
 		40B47A9B2B1E0823007DD273 /* NovaOcorrenciaCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B47A9A2B1E0823007DD273 /* NovaOcorrenciaCoordinator.swift */; };
 		40B47A9D2B1E0837007DD273 /* SobreCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B47A9C2B1E0837007DD273 /* SobreCoordinator.swift */; };
 		40B47A9F2B1E084C007DD273 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B47A9E2B1E084C007DD273 /* TabBarCoordinator.swift */; };
+		40B47AA12B20AAA3007DD273 /* EscolherImagem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B47AA02B20AAA3007DD273 /* EscolherImagem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +77,7 @@
 		40B47A9A2B1E0823007DD273 /* NovaOcorrenciaCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovaOcorrenciaCoordinator.swift; sourceTree = "<group>"; };
 		40B47A9C2B1E0837007DD273 /* SobreCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SobreCoordinator.swift; sourceTree = "<group>"; };
 		40B47A9E2B1E084C007DD273 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
+		40B47AA02B20AAA3007DD273 /* EscolherImagem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EscolherImagem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,6 +213,7 @@
 			children = (
 				40B47A962B1DFDF7007DD273 /* NovaOcorrenciaView.swift */,
 				40B47A982B1DFE07007DD273 /* NovaOcorrenciaViewController.swift */,
+				40B47AA02B20AAA3007DD273 /* EscolherImagem.swift */,
 			);
 			path = NovaOcorrencia;
 			sourceTree = "<group>";
@@ -318,6 +321,7 @@
 				4040A4532B02548600A5EEDD /* LoginView.swift in Sources */,
 				4040A4622B0B830D00A5EEDD /* RegisterView.swift in Sources */,
 				40B47A9F2B1E084C007DD273 /* TabBarCoordinator.swift in Sources */,
+				40B47AA12B20AAA3007DD273 /* EscolherImagem.swift in Sources */,
 				4040A4762B10E43600A5EEDD /* SobreViewController.swift in Sources */,
 				4040A44C2B02516D00A5EEDD /* Coordinator.swift in Sources */,
 				4040A45D2B07AF8800A5EEDD /* TextFieldDefaut.swift in Sources */,

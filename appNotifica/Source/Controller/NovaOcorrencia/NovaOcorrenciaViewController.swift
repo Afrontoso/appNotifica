@@ -16,6 +16,10 @@ class NovaOcorrenciaViewController: ViewControllerDefaut {
     lazy var novaOcorrenciaView: NovaOcorrenciaView = {
         let novaOcorrenciaView = NovaOcorrenciaView()
         
+        novaOcorrenciaView.onCameraTap = {
+            EscolhaImagem().selecionadorImagem(self){imagem in novaOcorrenciaView.setImage(image: imagem)
+            }
+        }
         
         return novaOcorrenciaView
     }()

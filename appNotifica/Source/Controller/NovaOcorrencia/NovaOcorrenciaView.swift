@@ -12,11 +12,16 @@ class NovaOcorrenciaView: ViewDefault {
     //MARK: - Inits
 
     //MARK: - Closures
+    var onCameraTap: (() -> Void)?
     
     //MARK: - Proports
     lazy var imagem: UIImageView = {
         let view = UIImageView()
         view.image = UIImage(named: "imageCamera")
+        
+        let tapGP = UITapGestureRecognizer(target: self, action: #selector(cameraTap))
+        view.addGestureRecognizer(tapGP)
+        view.isUserInteractionEnabled = true
         
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
@@ -73,5 +78,13 @@ class NovaOcorrenciaView: ViewDefault {
             saveButton.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -14),
 
             ])
+    }
+    @objc
+    private func cameraTap(){
+        self.onCameraTap?()
+    }
+    
+    func setImage(image: UIImage){
+        imagem.image = image
     }
 }
