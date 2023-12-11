@@ -10,7 +10,18 @@ import UIKit
 
 class NovaOcorrenciaView: ViewDefault {
     //MARK: - Inits
-
+    
+    var viewModel: NovaOcorrenciaViewModel
+    
+    init(viewModel: NovaOcorrenciaViewModel){
+        self.viewModel = viewModel
+        super.init(frame: .zero)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     //MARK: - Closures
     var onCameraTap: (() -> Void)?
     

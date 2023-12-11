@@ -16,14 +16,12 @@ class SobreViewController: ViewControllerDefaut {
     lazy var sobreView: SobreView = {
         let sobreView = SobreView()
         
-        
         return sobreView
     }()
     
     override func loadView() {
         self.view = sobreView
     }
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()

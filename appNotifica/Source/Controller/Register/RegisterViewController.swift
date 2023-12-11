@@ -18,14 +18,12 @@ class RegisterViewController: ViewControllerDefaut {
         registerView.onLoginTap = {
             self.onLoginTap?()
         }
-//        registerView.onLoginTap = self.onLoginTap
         return registerView
     }()
     
     override func loadView() {
         self.view = registerView
     }
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()

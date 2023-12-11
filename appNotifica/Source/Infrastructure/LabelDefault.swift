@@ -34,7 +34,6 @@ class LabelDefault: UILabel {
         self.numberOfLines = 0
         
         self.textAlignment = .center
-        //self.font  = UIFont(name: "SFProDisplay-Light", size: 17)
         self.translatesAutoresizingMaskIntoConstraints = false
 
     }

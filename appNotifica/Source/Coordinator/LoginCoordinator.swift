@@ -25,8 +25,6 @@ class LoginCoordinator: Coordinator {
         }
         
         self.navigationController.pushViewController(viewController, animated: true)
-        
-        
     }
     
     private func goToRegisterTap() {

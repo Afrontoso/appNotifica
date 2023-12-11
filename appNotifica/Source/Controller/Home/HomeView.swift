@@ -12,15 +12,17 @@ class HomeView: ViewDefault {
     
     //MARK: - Inits
     
-//    override init(frame: CGRect){
-//        super.init(frame: frame)
-//        setupVisualElements()
-//        self.backgroundColor = .viewBackgroudColor
-//    }
-//    
-//    required init? (coder: NSCoder) {
-//        fatalError("Init(coder: ) has not been implemented")
-//    }
+    var viewModel: HomeViewModel
+    
+    init(viewModel: HomeViewModel){
+        self.viewModel = viewModel
+        super.init(frame: .zero)
+    }
+    
+    required init? (coder: NSCoder) {
+        fatalError("Init(coder: ) has not been implemented")
+    }
+    
     override func setupVisualElements(){
         super.setupVisualElements()
     }

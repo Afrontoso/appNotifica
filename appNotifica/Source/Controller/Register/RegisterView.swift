@@ -45,7 +45,6 @@ class RegisterView: ViewDefault {
         senhaTextField.delegate = self
         cSenhaTextField.delegate = self
         
-        
         self.addSubview(imageLabel)
         self.addSubview(emailTextField)
         self.addSubview(senhaTextField)
@@ -97,11 +96,9 @@ class RegisterView: ViewDefault {
     @objc private func loginTap(){
         onLoginTap?()
     }
-    
 }
 
 extension RegisterView: UITextFieldDelegate {
-    
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if textField == emailTextField {

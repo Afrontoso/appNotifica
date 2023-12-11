@@ -19,5 +19,3 @@ class SobreView: ViewDefault {
         super.setupVisualElements()
     }
 }
-
-
